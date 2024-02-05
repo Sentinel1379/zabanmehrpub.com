@@ -1,0 +1,351 @@
+/* //////////////mobile///////////////////// */
+
+.HeaderTop-mob {
+    background-color: rgba(242, 242, 242, 1);
+    transition: background-color .2s ease;
+    height: 40px;
+    max-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HeaderTop-mob-container {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.Call-number-mob {
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.Call-number-mob>h6 {
+    background: rgb(28, 97, 231);
+    color: #fff;
+    border-radius: 55px;
+    padding: 5px 10px;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.Call-number-mob a {
+    color: #fff;
+    transition: all .3s;
+}
+
+.Call-number-mob a:hover {
+    color: #363636;
+}
+
+.distance_between-1::before {
+    content: '';
+    display: block;
+    height: 18px;
+    border-right: 1px solid rgba(0, 0, 0, 0.105);
+}
+
+.whatsUp-number-mob {
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.whatsUp-number-mob>h6 {
+    background: rgb(11, 187, 88);
+    color: #fff;
+    border-radius: 55px;
+    padding: 5px 10px;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.whatsUp-number-mob a {
+    color: #fff;
+    transition: all .3s;
+}
+
+.whatsUp-number-mob a:hover {
+    color: #363636;
+}
+
+.Burger-menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.Offcanvas-navbar-btn {
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.Offcanvas-navbar-btn>svg:hover {
+    color: rgb(133, 133, 133) !important;
+    fill: rgb(133, 133, 133);
+}
+
+.offcanvas-mob {
+    direction: rtl;
+    width: 340px !important;
+    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.offcanvas-body-mob {
+    padding: 0;
+}
+
+.offcanvas-mob-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.offcanvas-mob-navbar-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+
+.offcanvas-mob-navbar-item:active {
+    background-color: #f7f7f7;
+}
+
+.offcanvas-mob-navbar-item>a {
+    padding: 5px 20px;
+    min-height: 50px;
+    border-bottom: 1px solid rgba(0,0,0,0.105);
+    color: #333;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    width: 85%;
+}
+
+.offcanvas-mob-navbar-item>span {
+    width: 15%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(0,0,0,0.105);
+    border-bottom: 1px solid rgba(0,0,0,0.105);
+    color: #242424;
+    cursor: pointer;
+    transition: color .25s ease, background-color .25s ease;
+}
+
+.Favorit-item-mob {
+    padding: 0px 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.105);
+    flex-wrap: nowrap;
+}
+
+.Favorit-item-mob>a {
+    width: 95%;
+    padding: 0;
+    border: 0;
+}
+
+.Favorit-item-mob>span {
+    width: 5%;
+    border: 0;
+    padding: 0;
+    margin-left: 5px;
+}
+
+.Active {
+    background-color: #f7f7f7;
+}
+
+.Active1 {
+    color: #fff !important;
+    background-color: rgb(28,97,231) !important;
+}
+
+.English-books-mob,
+.German-books-mob, 
+.French-books-mob,
+.Turkish-books-mob,
+.Italian-books-mob,
+.Spanish-books-mob,
+.Other-languages-mob,
+.Collection-of-books-mob {
+    display: block;
+    flex: 1 1 100%;
+    order: 3;
+    margin: 0;
+    padding: 0;
+}
+
+.English-books-item-mob,
+.German-books-item-mob,
+.French-books-item-mob,
+.Turkish-books-item-mob,
+.Italian-books-item-mob,
+.Spanish-books-item-mob,
+.Other-languages-item-mob,
+.Collection-of-books-item-mob {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.English-books-item-mob:active,
+.German-books-item-mob:active,
+.French-books-item-mob:active,
+.Turkish-books-item-mob:active,
+.Italian-books-item-mob:active,
+.Spanish-books-item-mob:active,
+.Other-languages-item-mob:active,
+.Collection-of-books-item-mob:active {
+    background-color: #f7f7f7;
+}
+
+.English-books-item-mob>a,
+.German-books-item-mob>a ,
+.French-books-item-mob>a,
+.Turkish-books-item-mob>a,
+.Italian-books-item-mob>a,
+.Spanish-books-item-mob>a,
+.Other-languages-item-mob>a,
+.Collection-of-books-item-mob>a {
+    padding: 5px 20px;
+    min-height: 50px;
+    border-bottom: 1px solid rgba(0,0,0,0.105);
+    color: #848484;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    width: 85%;
+}
+
+.English-books-item-mob>span,
+.German-books-item-mob>span,
+.French-books-item-mob>span,
+.Turkish-books-item-mob>span,
+.Italian-books-item-mob>span,
+.Spanish-books-item-mob>span,
+.Other-languages-item-mob>span,
+.Collection-of-books-item-mob>span, {
+    width: 15%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(0,0,0,0.105);
+    border-bottom: 1px solid rgba(0,0,0,0.105);
+    color: #848484;
+    cursor: pointer;
+    transition: color .25s ease, background-color .25s ease;
+}
+
+
+.header-logo-mob {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100%;
+}
+
+.header-logo-mob>a {
+    color: #333333;
+}
+
+.header-logo-mob img {
+    max-width: 135px;
+    width: auto;
+    object-fit: contain;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.Acount-mob {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.Acount-icon-mob {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    color: #333;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:991.98px) {
+    .header-top-content {
+        height: 60px;
+        max-height: 60px;
+    }
+
+    .header-top .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .Acount-icon-btn {
+        background-color: transparent;
+        color: #333;
+    }
+
+    .Acount-icon-btn svg {
+        background-color: transparent;
+        fill: #333;
+    }
+
+    .header-bottom .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-bottom-container {
+        max-height: 60px;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    .search-input {
+        min-width: auto;
+    }
+}

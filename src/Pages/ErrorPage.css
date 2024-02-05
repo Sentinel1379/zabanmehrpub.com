@@ -1,0 +1,16 @@
+.error {
+    padding: 40px 0 30px 0;
+    min-height: 50vh;
+}
+
+.error-div {
+    display:  flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.error-div {
+    font-size: 30px;
+    font-weight: 700;
+    color: #242424;
+}

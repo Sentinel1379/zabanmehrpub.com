@@ -1,0 +1,144 @@
+.toolBar {
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 300;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.12);
+}
+
+.toolBar-Favorite-List,
+.toolBar-Cart ,
+.toolBar-Burger-menu ,
+.toolBar-Filter-mob {
+    flex: 1 0 20%;
+    position: relative;
+}
+
+.toolBar-Favorite-List>a ,
+.toolBar-Cart-icon ,
+.toolBar-Burger-menu-icon ,
+.toolBar-Filter-mob-icon {
+    position: relative;
+    padding: 0 10px 15px 10px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    line-height: 1;
+    transition: all .25s ease;
+}
+
+.toolBar-Favorite-List>a:hover .toolBar-Favorite-List-icon svg {
+    fill: rgba(51, 51, 51, .6);
+}
+
+.toolBar-Favorite-List>a:hover .toolBar-Favorite-List-text {
+    color: rgba(51, 51, 51, .6);
+}
+
+.toolBar-Favorite-List-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.toolBar-Favorite-List-number,
+.toolBar-Cart-number {
+    position: absolute;
+    top: -5px;
+    inset-inline-end: -9px;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #fff;
+    background-color: rgb(28, 97, 231);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.toolBar-Favorite-List-text,
+.toolBar-Cart-text ,
+.toolBar-Burger-menu-text ,
+.toolBar-Filter--mob-text {
+    position: absolute;
+    right: 10px;
+    bottom: 3px;
+    left: 10px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 1px 0;
+    color: #333;
+    cursor: pointer;
+}
+
+.toolBar-Cart-number {
+    display: none;
+}
+
+
+@media (max-width:991.98px) {
+    .Card-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: #fff;
+        color: #333;
+    }
+
+    .Card-btn>svg {
+        fill: #333;
+    }
+
+    .toolBar-Cart-icon:hover .Card-btn>svg {
+        fill: rgba(51, 51, 51, .6);
+    }
+
+    .toolBar-Cart-icon:hover .toolBar-Cart-text {
+        color: rgba(51, 51, 51, .6);
+    }
+
+    .toolBar-Filter-mob-icon:hover .toolBar-Filter--mob-text {
+        color: rgba(51, 51, 51, .6);
+    }
+
+    .toolBar-Filter-mob-icon:hover svg {
+        fill: rgba(51, 51, 51, .6);
+    }
+
+    .toolBar-Cart-number {
+        display: block;
+    }
+
+    .Offcanvas-navbar-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: #fff;
+        color: #333;
+    }
+
+    .toolBar-Burger-menu-icon:hover .Offcanvas-navbar-btn svg {
+        fill: rgba(51, 51, 51, .6);
+    }
+
+    .toolBar-Burger-menu-icon:hover .toolBar-Burger-menu-text {
+        color: rgba(51, 51, 51, .6);
+    }
+}

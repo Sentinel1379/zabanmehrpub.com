@@ -1,0 +1,732 @@
+.header {
+    padding-top: 140px;
+    margin-bottom: 4px;
+}
+
+@media (max-width:1199.98px) {
+    .header {
+        margin-bottom: 25px;
+    }
+}
+
+.header-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 300;
+}
+
+/* ///////////////////////////////////////// */
+
+.header-top {
+    background-color: #fff;
+    transition: background-color .2s ease;
+}
+
+.header-top-content {
+    display: flex;
+    height: 80px;
+    max-height: 80px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transition: height .2s ease, max-height .2s ease;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: -10px; */
+}
+
+.header-logo a {
+    color: #333333;
+}
+
+.header-logo img {
+    max-width: 200px;
+    width: auto;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex: 1 1 0%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.search-bar-container {
+    border-radius: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 1 1 auto;
+}
+
+.search-bar-input-group {
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    min-width: 290px;
+    max-width: 100%;
+    padding: 0 15px 0 46px;
+    height: 46px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 35px;
+    background-color: rgb(255, 255, 255);
+    color: #777;
+    font-size: 14px;
+    transition: border-color .5s ease;
+    outline: 0;
+}
+
+.search-input:focus {
+    border-color: rgba(0, 0, 0, 0.15) !important;
+
+}
+
+.search-input::placeholder {
+    color: #777;
+}
+
+.search-btn {
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    bottom: 4px;
+    border-radius: 35px;
+    border: 0;
+    width: 38px;
+    background-color: rgb(28, 97, 231);
+    color: #fff;
+    padding: 0;
+    font-size: 0;
+    font-weight: 400;
+    line-height: 1.2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: color .25s ease, background-color .25s ease, border-color .25s ease, box-shadow .25s ease, opacity .25s ease;
+
+}
+
+.search-btn:hover {
+    background-color: #777 !important;
+}
+
+.phone-numbers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.call-number,
+.whatsUp-number {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+.call-number-icon,
+.whatsUp-number-icon {
+    margin-right: 20px;
+    max-width: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.call-number-icon svg,
+.whatsUp-number-icon svg {
+    width: 35px;
+    height: 35px;
+}
+
+.call-number-content,
+.whatsUp-number-content {
+    border-radius: 10px;
+    flex: 1 1 auto;
+}
+
+.call-number-content h6,
+.whatsUp-number-content h6 {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #242424;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.call-number-content a,
+.whatsUp-number-content a {
+    color: #333333;
+}
+
+.call-number-content strong,
+.whatsUp-number-content strong {
+    color: #1c61e7;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* /////////////////////////////////////////////////////////// */
+
+
+.header-bottom {
+    background-color: rgba(230, 239, 253, 1);
+    transition: background-color .2s ease;
+}
+
+.header-bottom-container {
+    height: 60px;
+    max-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+@media (max-width:1199.98px) {
+    .header-bottom-container {
+        height: 93px;
+        max-height: 93px;
+    }
+}
+
+.navbar-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.NavLink {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333;
+    height: 40px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+}
+
+.NavLink:hover {
+    color: rgb(28, 97, 231);
+    background-color: rgb(179, 203, 248);
+}
+
+.Navbar-Left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.Acount,
+.Favorite-List,
+.Cart {
+    position: relative;
+}
+
+.Acount button,
+.Favorite-List a,
+.Cart>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    color: #333;
+    line-height: 1;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.Acount-icon {
+    color: rgba(51, 51, 51, 1);
+    background-color: rgba(255, 255, 255, 1);
+    border: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all .25s ease;
+}
+
+.Acount-icon:hover svg {
+    color: rgb(28, 97, 231);
+}
+
+.Acount-icon svg {
+    color: rgba(51, 51, 51, 1);
+    transition: all .25s ease;
+}
+
+.Acount-text {
+    display: none;
+}
+
+.Favorite-List-icon {
+    border: 1px solid rgba(0, 0, 0, 0.105);
+    width: 42px;
+    height: 42px;
+    border-radius: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all .25s ease;
+}
+
+.Favorite-List-icon:hover svg {
+    color: rgb(28, 97, 231);
+}
+
+.Favorite-List-icon svg {
+    color: #333;
+    transition: all .25s ease;
+}
+
+.Favorite-List-text {
+    display: none;
+}
+
+.Favorite-List-number {
+    position: absolute;
+    top: -3px;
+    inset-inline-end: -7px;
+    background-color: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.17);
+    color: rgb(28, 97, 231);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 18px;
+    z-index: 1;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.Cart-icon {
+    background-color: rgb(28, 97, 231);
+    color: ;
+    width: 42px;
+    height: 42px;
+    border-radius: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all .25s ease;
+}
+
+.Cart-icon:hover svg {
+    color: rgb(28, 97, 231);
+}
+
+.Cart-icon svg {
+    transition: all .25s ease;
+}
+
+.Card-btn {
+    border: 0;
+    background-color: rgb(28, 97, 231);
+}
+
+.Cart-text {
+    margin-right: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    text-decoration: none !important;
+}
+
+.Cart-number {
+    position: absolute;
+    top: -3px;
+    inset-inline-end: -7px;
+    background-color: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.17);
+    color: rgb(28, 97, 231);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 18px;
+    z-index: 1;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.Cart-number-text {
+    display: none;
+}
+
+/* ////////////////////////////// */
+
+.NavLink-list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 100;
+    width: 220px;
+    padding: 12px 15px;
+    margin-top: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+    text-align: right;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), visibility 0.4s cubic-bezier(0.19, 1, 0.22, 1), transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translateY(15px) translateZ(0);
+}
+
+.NavLink-list>ul {
+    padding: 0;
+}
+
+.NavLink-item {
+    position: relative;
+}
+
+.NavLink-item a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    color: #848484;
+    font-size: 14px;
+    line-height: 1.3;
+    transition: all .25s ease;
+}
+
+.NavLink-item-menu {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 220px;
+    margin: 0 20px 0 0;
+    padding: 12px 15px;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+    text-align: right;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), visibility 0.4s cubic-bezier(0.19, 1, 0.22, 1), transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translateY(15px) translateZ(0);
+}
+
+.NavLink-item-menu a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    color: #848484;
+    font-size: 14px;
+    line-height: 1.3;
+    transition: all .25s ease;
+}
+
+.English-book:hover>.English-book-menu {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.English-book-institution:hover>.English-book-institution-menu {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.English-book-story:hover>.English-book-story-menu {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.English-book-romance:hover>.English-book-romance-menu {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.English-book-abilities:hover>.English-book-abilities-menu {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.English-book-tests:hover>.English-book-tests-menu {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.German-book:hover>.German-book-menu {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.French-book:hover>.French-book-menu {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.Turkish-book:hover>.Turkish-book-menu {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.Italian-book:hover>.Italian-book-menu {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.Spanish-book:hover>.Spanish-book-menu {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.Other-languages:hover>.Other-languages-menu {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.Collection-of-books:hover>.Collection-of-books-menu {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* ///////////////////////////////////// */
+
+.offcanvas {
+    direction: rtl;
+    width: 340px !important;
+    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.offcanvas-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    border: 1px solid rgba(0,0,0,0.105);
+}
+
+.offcanvas-header span {
+    font-size: 120%;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #242424;
+}
+
+.offcanvas-body {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Mount-Price {
+    margin-bottom: 15px;
+}
+
+.Mount-Price-text {
+    margin-bottom: 0;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 130%;
+    border-top: 1px solid rgba(0,0,0,0.105);
+}
+
+.Mount-Price-text>span {
+    color: rgb(28,97,231);
+    flex-grow: 1;
+    text-align: left;
+    font-weight: 600;
+}
+
+.Mount-Price-btn {
+    margin-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.SeeCart-Btn {
+    width: 100%;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    min-height: 42px;
+    border-radius: 5px;
+    color: rgb(28,97,231);
+    background-color: rgb(225,235,255);
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.2;
+    transition: color .25s ease, background-color .25s ease, border-color .25s ease, box-shadow .25s ease, opacity .25s ease;
+}
+
+.SeeCart-Btn:hover {
+    background-color: #e0e0e0;
+}
+
+.Checkout-Btn {
+    width: 100%;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    min-height: 42px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(28,97,231);
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.2;
+    transition: color .25s ease, background-color .25s ease, border-color .25s ease, box-shadow .25s ease, opacity .25s ease;
+}
+
+.btn-close {
+    font-weight: 400;
+    font-size: 70%;
+    color: #333;
+    position: relative;
+    width: 55px;
+    opacity: 1;
+    transition: all .25s ease;
+}
+
+.btn-close:hover {
+    color: #777 !important;
+    opacity: 1;
+}
+
+.btn-close::before {
+    content: 'بستن';
+    position: absolute;
+    top: 3px;
+    right: 45px;
+    font-size: 110%;
+    font-weight: 900;
+}
+
+.form-login {
+    padding: 20px 10px 15px 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.105);
+}
+
+.form-login-input-number {
+    margin-bottom: 20px;
+}
+
+.InputNumberLabel {
+    margin-bottom: 5px;
+    color: #242424;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+.InputNumber {
+    width: 100%;
+    height: 42px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: inherit;
+    font-size: 14px;
+    transition: border-color .5s ease;
+}
+
+.input-group-text {
+    height: 42px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: inherit;
+    font-size: 14px;
+    transition: border-color .5s ease;
+}
+
+.InputNumber>input:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,0.1);
+    direction: ltr;
+}
+
+.FormSave {
+    margin-bottom: 20px;
+}
+
+.FormSave input {
+    margin-inline-end: 5px;
+}
+
+.FormSave label {
+    font-size: 100%;
+}
+
+.form-submit-btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 42px;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: none;
+    background-color: rgb(28,97,231);
+    padding: 5px 20px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.2;
+    transition: color .25s ease, background-color .25s ease, border-color .25s ease, box-shadow .25s ease, opacity .25s ease;
+}
+
+.SignIn {
+    padding: 20px 15px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.105);
+    font-size: 100%;
+}
+
+.SignIn svg {
+    margin-bottom: 15px;
+    font-size: 54px;
+    line-height: 1;
+}
+
+.SignIn p {
+    color: #242424;
+    font-size: 100%;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.SignIn a {
+    border-bottom: 2px solid rgb(28,97,231);
+    padding: 0;
+    background-color: transparent;
+    color: #333;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.2;
+    transition: color .25s ease, background-color .25s ease, border-color .25s ease, box-shadow .25s ease, opacity .25s ease;
+}

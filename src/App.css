@@ -1,0 +1,19 @@
+.body {
+  font-size: 12px;
+  margin: 0;
+  background-color: #fff;
+  color: #777777;
+  font-weight: 400;
+  line-height: 1.6;
+  direction: rtl;
+}
+
+
+ul ,li {
+  list-style-type: none;
+  padding: 0; 
+}
+
+a {
+  text-decoration: none !important;
+}
