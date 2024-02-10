@@ -1,5 +1,6 @@
-import './db.json'
-{
+
+
+const data = {
     "card": [
         {
             "id": 1,
@@ -262,9 +263,8 @@ import './db.json'
             "bookCode": "ZM-1162"
         }
     ]
-}
+};
 
-const data = require('./db.json');
 const { json } = require('micro');
 
 module.exports = async (req, res) => {
