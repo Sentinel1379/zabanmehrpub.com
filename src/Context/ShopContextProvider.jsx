@@ -6,7 +6,7 @@ export const ShopContext = createContext(null);
 
 export default function ShopContextProvider(props) {
   const { data: cardData } = useQuery(["card"], () => {
-    return Axios.get("http://localhost:3001/card").then((res) => res.data);
+    return Axios.get("https://zabanmehrpub-com-a9z5-ko98yhb58-sentinels-projects.vercel.app/card").then((res) => res.data);
   });
 
   const cardBooks = cardData && cardData;
@@ -101,3 +101,8 @@ export default function ShopContextProvider(props) {
     </ShopContext.Provider>
   );
 }
+
+
+// const { data: cardData } = useQuery(["card"], () => {
+//   return Axios.get("http://localhost:3001/card").then((res) => res.data);
+// });
