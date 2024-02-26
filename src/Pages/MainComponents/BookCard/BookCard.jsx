@@ -7,8 +7,12 @@ import { useQuery } from "react-query";
 import { ShopContext } from "../../../Context/ShopContextProvider";
 
 export default function BookCard(props) {
+  // const { data: cardData } = useQuery(["card"], () => {
+  //   return Axios.get("http://localhost:3001/card").then((res) => res.data);
+  // });
+
   const { data: cardData } = useQuery(["card"], () => {
-    return Axios.get("http://localhost:3001/card").then((res) => res.data);
+    return Axios.get("https://zabanmehrpub-com-a9z5-rfrub7m1z-sentinels-projects.vercel.app/api/Data").then((res) => res.data);
   });
 
   let x = cardData?.find((item) => {
