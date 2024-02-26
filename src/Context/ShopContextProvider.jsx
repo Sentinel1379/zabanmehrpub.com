@@ -1,13 +1,15 @@
 import { Axios } from "axios";
 import { createContext, useEffect, useState } from "react";
 import { useQuery } from "react-query";
+import { DATA } from "../Data/cardData";
 
 export const ShopContext = createContext(null);
 
 export default function ShopContextProvider(props) {
-  const { data: cardData } = useQuery(["card"], () => {
-    return Axios.get("https://zabanmehrpub-com-a9z5-rfrub7m1z-sentinels-projects.vercel.app/api/Data").then((res) => res.data);
-  });
+  
+  const cardData = DATA.map((Item) => {
+    return Item
+  })
 
   const cardBooks = cardData && cardData;
 

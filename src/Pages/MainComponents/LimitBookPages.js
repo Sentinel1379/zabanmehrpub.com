@@ -1,23 +1,28 @@
 import Axios from "axios";
 import { createContext, useState } from "react";
+import { DATA } from "../../Data/cardData";
 
 export const LimitPageBooks = createContext(null)
 
 export default function LimitPageBooksProvider(props) {
 
-    const [limit, setLimit] = useState([{ id: 1 }, { id: 2 },
-    { id: 3 }, { id: 4 }, { id: 5 },
-    { id: 6 }, { id: 7 }, { id: 8 }, { id: 9 }, { id: 10 }, { id: 11 }, { id: 12 }]);
+    const cardData1 = DATA.map((Item) => {
+        return Item
+    })
+
+    const [limit, setLimit] = useState([cardData1[0], cardData1[1], cardData1[2], cardData1[3]
+        , cardData1[4], cardData1[5], cardData1[6]
+    ]);
+
 
     const [page1, setPage1] = useState(true);
     const [page2, setPage2] = useState(false);
     const [page3, setPage3] = useState(false);
 
-    function LimitPage(i1, i2) {
-        Axios.get(`http://localhost:3001/card?_start=${i1}&_end=${i2}`).then((response) => {
-            var data = response.data;
-            return setLimit(data);
-        });
+    function LimitPage(i1) {
+        setLimit([cardData1[i1], cardData1[i1 + 1], cardData1[i1 + 2], cardData1[i1 + 3]
+            , cardData1[i1 + 4], cardData1[i1 + 5], cardData1[i1 + 6]]
+        )
     }
 
 

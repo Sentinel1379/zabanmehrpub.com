@@ -187,10 +187,7 @@ export default function BooksPage() {
                     )}
                   </div>
                   <div className="filter-accent">
-                    <h5
-                      className="filter-accent-title"
-                      onClick={ShowAccent}
-                    >
+                    <h5 className="filter-accent-title" onClick={ShowAccent}>
                       فیلتر بر اساس لهجه
                       <ChevronDown
                         color="#333"
@@ -206,7 +203,7 @@ export default function BooksPage() {
                         <ul className="filter-accent-list">
                           <li className="filter-accent-item">
                             <a href="//" className="accent-name">
-                            آلمانی
+                              آلمانی
                             </a>
                             <span className="numberBook">1</span>
                           </li>
@@ -248,7 +245,7 @@ export default function BooksPage() {
                   <div className="Store-showFilters">
                     <div>
                       <section className="showFilter-Offcanvas">
-                        <FilterOffcanvas/>
+                        <FilterOffcanvas />
                       </section>
                       <section className="showFilter-numberSlide">
                         <p>نمایش:</p>
@@ -311,6 +308,7 @@ export default function BooksPage() {
                       <ul className="pagination">
                         <li className="page-item">
                           <a
+                            href="/books"
                             className="page-link Page-prev"
                             aria-label="Previous"
                           >
@@ -335,7 +333,7 @@ export default function BooksPage() {
                           <a
                             className="page-link Page2"
                             onClick={() => {
-                              LimitPage(12, 19);
+                              LimitPage(7);
                               setPage1(false);
                               setPage3(false);
                               setPage2(true);
@@ -354,7 +352,7 @@ export default function BooksPage() {
                           <a
                             className="page-link Page3"
                             onClick={() => {
-                              LimitPage(12, 19);
+                              LimitPage(14);
                               setPage1(false);
                               setPage2(false);
                               setPage3(true);

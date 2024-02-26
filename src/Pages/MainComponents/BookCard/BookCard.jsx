@@ -5,15 +5,16 @@ import "./BookCard.css";
 import Axios from "axios";
 import { useQuery } from "react-query";
 import { ShopContext } from "../../../Context/ShopContextProvider";
+import { DATA } from "../../../Data/cardData";
 
 export default function BookCard(props) {
   // const { data: cardData } = useQuery(["card"], () => {
   //   return Axios.get("http://localhost:3001/card").then((res) => res.data);
   // });
 
-  const { data: cardData } = useQuery(["card"], () => {
-    return Axios.get("https://zabanmehrpub-com-a9z5-rfrub7m1z-sentinels-projects.vercel.app/api/Data").then((res) => res.data);
-  });
+  const cardData = DATA.map((Item) => {
+    return Item
+  })
 
   let x = cardData?.find((item) => {
     if (item.id === props.Id) {
